@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(185, 93, 8, 0.5);
+    padding: 20px;
+    border: 2px solid  rgb(41, 3, 3);
+
+}
+fieldset {
+    border: 2px solid rgb(41, 3, 3);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+legend{
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+input,textarea {
+    width: calc(100% - 1px);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid  rgb(43, 3, 3);
+    box-sizing:border-box ;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(43, 3, 3);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button:hover {
+    background-color: rgb(34, 2, 2);
+}
+/* Resume Output Styling */
+#resumeOutput {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgb(43, 3, 3);
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header (name and picture) */
+#resumeOutput h1 {
+    font-size: 34px;
+    color:rgb(43, 3, 3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resumeOutput img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50% rgb(43, 3, 3);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    color: rgb(43, 3, 3);
+}
+
+/* Section Titles */
+#resumeOutput h2 {
+    font-size: 28px;
+    color:  rgb(43, 3, 3);
+    border-bottom: 2px solid  rgb(43, 3, 3);
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#resumeOutput h3 {
+    font-size: 23px;
+    color:  rgb(43, 3, 3);
+}
+
+/* Text for each section */
+#resumeOutput p {
+    font-size: 18px;
+    color: rgb(43, 3, 3);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Skills section (bulleted list) */
+#resumeOutput ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+#resumeOutput ul li {
+    font-size: 17px;
+    color:  rgb(43, 3, 3);
+}
+
+/* Contact information styling */
+#resumeOutput strong {
+    color:  rgb(43, 3, 3);
+}
+
+
+
+/* Print-specific styling */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #resumeOutput, #resumeOutput * {
+        visibility: visible;
+    }
+
+    #resumeOutput {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.heading {
+    text-align: center;
+    color:  rgb(43, 3, 3);
+    font-family: Arial, Helvetica, sans-serif
+
+}
